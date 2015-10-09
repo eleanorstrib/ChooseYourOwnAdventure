@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9Bf-nQ-wEL">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ElsieSwashCaps-Regular.ttf">
+            <string>ElsieSwashCaps-Regular</string>
+            <string>ElsieSwashCaps-Regular</string>
+            <string>ElsieSwashCaps-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="nOq-sl-Jfd">
+            <objects>
+                <navigationController id="9Bf-nQ-wEL" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7Cc-X3-yaB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="yOK-Dl-Ego" kind="relationship" relationship="rootViewController" id="5bk-zW-wPa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CoC-Zz-p2r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-417" y="65"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WsP-ID-ilt">
+            <objects>
+                <viewController id="yOK-Dl-Ego" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Ai-vQ-4oQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="sVq-Ut-AIm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Eia-HH-bmw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQt-Wb-ieE">
+                                <rect key="frame" x="92" y="395" width="231" height="30"/>
+                                <fontDescription key="fontDescription" name="ElsieSwashCaps-Regular" family="Elsie Swash Caps" pointSize="15"/>
+                                <state key="normal" title="Cappuccino, per favore!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRn-Iz-2JE">
+                                <rect key="frame" x="94" y="448" width="227" height="30"/>
+                                <fontDescription key="fontDescription" name="ElsieSwashCaps-Regular" family="Elsie Swash Caps" pointSize="15"/>
+                                <state key="normal" title="Latte, s'il vous plait!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Woj-58-9A2">
+                                <rect key="frame" x="31" y="71" width="250" height="275"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">You walk into a crowded cafe in London on a rainy day.
+
+You approach the bar slowly, mentally shaking off the cold and wet of the afternoon, contemplating your drink choice.   
+
+The barista nods to you.  
+
+"What are you having, miss?"</string>
+                                <fontDescription key="fontDescription" name="ElsieSwashCaps-Regular" family="Elsie Swash Caps" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="alert"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yRn-Iz-2JE" firstAttribute="top" secondItem="zQt-Wb-ieE" secondAttribute="bottom" constant="23" id="5jU-ey-he2"/>
+                            <constraint firstAttribute="centerX" secondItem="zQt-Wb-ieE" secondAttribute="centerX" id="Jnl-mI-sNm"/>
+                            <constraint firstAttribute="centerX" secondItem="Woj-58-9A2" secondAttribute="centerX" id="OOr-oo-qyH"/>
+                            <constraint firstAttribute="centerX" secondItem="yRn-Iz-2JE" secondAttribute="centerX" id="bZh-Qh-M7u"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jd2-97-n16"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pft-pU-LVC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270" y="-62"/>
+        </scene>
+    </scenes>
+</document>
